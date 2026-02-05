@@ -42,3 +42,6 @@ def bellman_ford(edges, start, nodes):
 # Let E = edges -> (number of edges)
 # O(V.E) - Time complexity
 # O(V^2) - Space complexity
+
+# NOTE: For Graphs with negative Edge Weights, the Bellman-Ford Algorithm, should be used
+# to calculate the shortest path (Not Dijkstra Algorithm).

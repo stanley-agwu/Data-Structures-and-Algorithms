@@ -33,6 +33,15 @@ def dijkstra(graph, start):
 
     return shortest_paths, predecessors
 
+# Let V = nodes -> (number of vertices)
+# Let E = edges -> (number of edges)
+# Binary Heap -> Time complexity
+# Extract -> O(V.log V) - Insert -> O(E.log V) - Overall -> O((E  +V).log V) 
+# O(V) - Space complexity
+
+# NOTE -> Dijkstra Algorithm does not work for Graphs with negative edge weights.
+# For Graphs with negative Edge Weights, the Bellman-Ford Algorithm, should be used.
+
 # Example graph
 graph = {
     "A": {"B": 4, "C": 5},

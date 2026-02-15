@@ -1,5 +1,15 @@
 # Dijkstra's Shortest Path Algorithm
 
+"""
+What Dijkstra's Algorithm does:
+1. Finds shortest path from source node to all other nodes.
+2. Uses min-heap to greedily select nearest unprocessed node.
+3. Works only with non-negative edge weights.
+
+Time complexity: O((V + E) log V)
+Space complexity: O(V)
+"""
+
 import heapq
 
 # Dijkstra's algorithm implementation
@@ -36,7 +46,7 @@ def dijkstra(graph, start):
 # Let V = nodes -> (number of vertices)
 # Let E = edges -> (number of edges)
 # Binary Heap -> Time complexity
-# Extract -> O(V.log V) - Insert -> O(E.log V) - Overall -> O((E  +V).log V) 
+# Extract -> O(V.log V) - Insert -> O(E.log V) - Overall -> O((E + V).log V) 
 # O(V) - Space complexity
 
 # NOTE -> Dijkstra Algorithm does not work for Graphs with negative edge weights.

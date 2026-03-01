@@ -59,7 +59,7 @@ def edit_dist_memo(s1: str, s2: str, memo = {}) -> int:
 
 # Let m, n = len(s1), len(s2)
 # O(m . n) - Time complexity
-# O(m) - Space complexity
+# O(m) - Space complexity -> Assume m > n Else O(n) if n > m
 
 # 3. Bottom-Up Approach (Tabulation method)
 def edit_distance_tab(s1, s2):
